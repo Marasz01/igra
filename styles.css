@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: navy;
+  }
+  
+  input[type="number"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #001f4d;
+  }
+  
+  #message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
