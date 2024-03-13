@@ -17,15 +17,15 @@ function checkGuess() {
   }
   
   if (userGuess === randomNumber) {
-    message.textContent = `Congratulations! You guessed the correct number in ${guessCount + 1} attempts!`;
+    message.textContent = `Čestitamo! Pogodili ste broj u ${guessCount + 1} pokušaja!`;
     message.style.color = 'green';
     endGame();
   } else if (userGuess < randomNumber) {
-    message.textContent = 'Too low! Try again.';
-    message.style.color = 'orange';
+    message.textContent = 'Pre nisko! Pokušajte ponovno';
+    message.style.color = 'red';
   } else {
-    message.textContent = 'Too high! Try again.';
-    message.style.color = 'orange';
+    message.textContent = 'Pre visoko! Pokušajte ponovno';
+    message.style.color = 'red';
   }
 
   guessCount++;
