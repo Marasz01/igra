@@ -1,15 +1,15 @@
-// Generate a random number between 1 and 100
+
 const randomNumber = Math.floor(Math.random() * 100) + 1;
 
-// Get reference to HTML elements
+
 const guessField = document.getElementById('guessField');
 const submitButton = document.querySelector('button');
 const message = document.getElementById('message');
 
-// Initialize guess count
+
 let guessCount = 0;
 
-// Function to check the guess
+
 function checkGuess() {
   let userGuess = Number(guessField.value);
   if (guessCount === 0) {
@@ -33,7 +33,6 @@ function checkGuess() {
   guessField.focus();
 }
 
-// Function to end the game
 function endGame() {
   guessField.disabled = true;
   submitButton.disabled = true;
